@@ -2,7 +2,7 @@
 
 En esta carpeta encontrarás ejemplos completos de diferentes tipos de proyectos usando UIKit.
 
-## 📋 Lista de Ejemplos
+## Lista de Ejemplos
 
 ### 1. **Blog con UIKit** (`01-blog.html`)
 Un blog completo con:
@@ -54,14 +54,14 @@ Página de ventas profesional con:
 
 ---
 
-## 🚀 Cómo Usar Estos Ejemplos
+## Cómo Usar Estos Ejemplos
 
 1. **Abre cualquier archivo HTML** en tu navegador
 2. **Inspecciona el código** para ver cómo está estructurado
-3. **Modifica y experimenta** - ¡Los ejemplos son para aprender!
+3. **Modifica y experimenta** - Los ejemplos son para aprender!
 4. **Copia patrones** que te gusten para tus proyectos
 
-## 💡 Tips Importantes
+## Tips Importantes
 
 - Todos los ejemplos usan **UIKit desde CDN**, no necesitas instalación
 - Usa la **Consola del Navegador** (F12) para debuguear
@@ -69,7 +69,7 @@ Página de ventas profesional con:
 - Inspecciona las **clases de UIKit** para entender mejor cómo funcionan
 - Compara los **ejemplos entre sí** para ver diferentes patrones
 
-## 📚 Estructura Típica
+## Estructura Típica
 
 Todos los ejemplos siguen esta estructura básica:
 
@@ -92,7 +92,7 @@ Todos los ejemplos siguen esta estructura básica:
 </html>
 ```
 
-## 🎯 Próximos Pasos
+## Próximos Pasos
 
 Después de explorar estos ejemplos:
 1. Lee la [documentación completa](../docs/)

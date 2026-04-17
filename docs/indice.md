@@ -145,7 +145,7 @@ Guía de navegación rápida para encontrar lo que necesitas.
 - Testimonios
 - CTAs efectivos
 
-### 📚 [README de Ejemplos](../ejemplos/README.md)
+### [README de Ejemplos](../ejemplos/README.md)
 - Descripción de cada ejemplo
 - Conceptos cubiertos
 - Cómo usar los ejemplos

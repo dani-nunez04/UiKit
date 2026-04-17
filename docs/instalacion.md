@@ -1,4 +1,4 @@
-# 🚀 Guía de Instalación y Uso
+# Guía de Instalación y Uso
 
 Una guía completa para instalar y usar UIKit en tus proyectos.
 
@@ -385,21 +385,21 @@ PROBLEMA: Estilos personalizados no funcionan
 
 ## Siguientes Pasos
 
-1. ✅ Instalación completada
-2. 📖 Lee la [Introducción](introduccion.md)
-3. 📐 Aprende el [Grid](grid.md)
-4. 🧩 Explora [Componentes](componentes.md)
-5. 💡 Mira los [Ejemplos](../ejemplos/)
+1. Instalación completada
+2. Lee la [Introducción](introduccion.md)
+3. Aprende el [Grid](grid.md)
+4. Explora [Componentes](componentes.md)
+5. Mira los [Ejemplos](../ejemplos/)
 
 ---
 
 ## Tips Finales
 
-- 🎨 Siempre personaliza los colores
-- 📱 Prueba en mobile desde el inicio
-- 🔍 Usa F12 para debuguear
-- 📚 Lee la [documentación oficial](https://getuikit.com/docs)
-- 🚀 Mantente actualizado con UIKit
+- Siempre personaliza los colores
+- Prueba en mobile desde el inicio
+- Usa F12 para debuguear
+- Lee la [documentación oficial](https://getuikit.com/docs)
+- Mantente actualizado con UIKit
 
 ---
 
