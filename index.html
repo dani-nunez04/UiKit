@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIKit - Framework CSS Educativo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3/dist/js/uikit-icons.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .hero-section {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 60px 20px;
+        }
+        .hero-section h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .hero-section p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .uk-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 12px;
+        }
+        .uk-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .section-container {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .feature-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .code-block {
+            background: #f5f5f5;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .code-block code {
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Sección Hero -->
+    <div class="hero-section">
+        <h1>🎨 UIKit Framework</h1>
+        <p>Un framework CSS moderno para desarrollo web frontend</p>
+        <p style="font-size: 1em; opacity: 0.9;">Explora cómo crear interfaces hermosas y responsivas</p>
+    </div>
+
+    <div class="uk-container">
+        <!-- Tarjetas de Introducción -->
+        <div class="card-container">
+            <div class="uk-card uk-card-default uk-padding">
+                <div class="uk-card-header">
+                    <h3 class="uk-card-title">📦 ¿Qué es UIKit?</h3>
+                </div>
+                <div class="uk-card-body">
+                    <p>UIKit es un framework frontend ligero y modular que proporciona componentes y utilidades CSS para construir interfaces web responsivas y atractivas.</p>
+                    <p><span class="feature-badge">Ligero</span><span class="feature-badge">Modular</span><span class="feature-badge">Flexible</span></p>
+                </div>
+            </div>
+
+            <div class="uk-card uk-card-default uk-padding">
+                <div class="uk-card-header">
+                    <h3 class="uk-card-title">🚀 Características Principales</h3>
+                </div>
+                <div class="uk-card-body">
+                    <ul class="uk-list uk-list-divider">
+                        <li>Grid responsivo</li>
+                        <li>Componentes predefinidos</li>
+                        <li>Utilidades CSS</li>
+                        <li>JavaScript interactivo</li>
+                        <li>Temas personalizables</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="uk-card uk-card-default uk-padding">
+                <div class="uk-card-header">
+                    <h3 class="uk-card-title">💡 Casos de Uso</h3>
+                </div>
+                <div class="uk-card-body">
+                    <ul class="uk-list uk-list-divider">
+                        <li>Dashboards</li>
+                        <li>Sitios corporativos</li>
+                        <li>Aplicaciones web</li>
+                        <li>E-commerce</li>
+                        <li>Portales internos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Grid -->
+        <div class="section-container">
+            <h2>📐 Sistema de Grid</h2>
+            <p>UIKit utiliza un sistema de grid flexible basado en CSS Grid y Flexbox.</p>
+            
+            <div class="code-block">
+                <code>&lt;div class="uk-grid"&gt;<br>
+&nbsp;&nbsp;&lt;div class="uk-width-1-3"&gt;33%&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="uk-width-1-3"&gt;33%&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="uk-width-1-3"&gt;33%&lt;/div&gt;<br>
+&lt;/div&gt;</code>
+            </div>
+
+            <h3>Ejemplo en vivo:</h3>
+            <div class="uk-grid uk-grid-small" uk-grid>
+                <div class="uk-width-1-3@m">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h4>Columna 1</h4>
+                        <p>33% del ancho</p>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@m">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h4>Columna 2</h4>
+                        <p>33% del ancho</p>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@m">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h4>Columna 3</h4>
+                        <p>33% del ancho</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Componentes -->
+        <div class="section-container">
+            <h2>🧩 Componentes Principales</h2>
+            
+            <h3 class="uk-margin-medium-top">Botones</h3>
+            <button class="uk-button uk-button-default">Botón Default</button>
+            <button class="uk-button uk-button-primary">Botón Primary</button>
+            <button class="uk-button uk-button-secondary">Botón Secondary</button>
+            <button class="uk-button uk-button-danger">Botón Danger</button>
+
+            <h3 class="uk-margin-medium-top">Formulario</h3>
+            <form>
+                <div class="uk-margin">
+                    <label class="uk-form-label">Nombre</label>
+                    <input class="uk-input" type="text" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label">Email</label>
+                    <input class="uk-input" type="email" placeholder="tu@email.com">
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label">Mensaje</label>
+                    <textarea class="uk-textarea" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <button class="uk-button uk-button-primary">Enviar</button>
+            </form>
+
+            <h3 class="uk-margin-medium-top">Alertas</h3>
+            <div class="uk-alert-primary" uk-alert>
+                <a class="uk-alert-close" uk-close></a>
+                <p><strong>Información:</strong> Este es un mensaje informativo.</p>
+            </div>
+            <div class="uk-alert-warning" uk-alert>
+                <a class="uk-alert-close" uk-close></a>
+                <p><strong>Advertencia:</strong> Ten cuidado con esta acción.</p>
+            </div>
+            <div class="uk-alert-danger" uk-alert>
+                <a class="uk-alert-close" uk-close></a>
+                <p><strong>Error:</strong> Algo salió mal, intenta de nuevo.</p>
+            </div>
+        </div>
+
+        <!-- Sección de Utilidades -->
+        <div class="section-container">
+            <h2>🛠️ Utilidades Comunes</h2>
+            
+            <h3>Espaciado (Margin & Padding)</h3>
+            <p><code>uk-margin</code> - Agrega margen estándar</p>
+            <p><code>uk-padding</code> - Agrega padding estándar</p>
+            
+            <h3 class="uk-margin-medium-top">Texto</h3>
+            <p class="uk-text-large">Texto grande</p>
+            <p class="uk-text-small">Texto pequeño</p>
+            <p class="uk-text-bold">Texto en negrita</p>
+            <p class="uk-text-italic">Texto en cursiva</p>
+            <p class="uk-text-center">Texto centrado</p>
+            
+            <h3 class="uk-margin-medium-top">Colores</h3>
+            <div class="uk-text-primary">Texto primary</div>
+            <div class="uk-text-secondary">Texto secondary</div>
+            <div class="uk-text-success">Texto success</div>
+            <div class="uk-text-warning">Texto warning</div>
+            <div class="uk-text-danger">Texto danger</div>
+        </div>
+
+        <!-- Sección de Recursos -->
+        <div class="section-container">
+            <h2>📚 Recursos y Enlaces</h2>
+            <div class="uk-grid uk-grid-small" uk-grid>
+                <div class="uk-width-1-2@m">
+                    <div class="uk-card uk-card-hover uk-card-body">
+                        <h4>🌐 Sitio Oficial</h4>
+                        <p>Documentación completa y ejemplos oficiales de UIKit.</p>
+                        <a href="https://getuikit.com" class="uk-button uk-button-text" target="_blank">Visitar Sitio</a>
+                    </div>
+                </div>
+                <div class="uk-width-1-2@m">
+                    <div class="uk-card uk-card-hover uk-card-body">
+                        <h4>📖 Documentación</h4>
+                        <p>Guía detallada sobre componentes y utilidades.</p>
+                        <a href="https://getuikit.com/docs" class="uk-button uk-button-text" target="_blank">Leer Docs</a>
+                    </div>
+                </div>
+                <div class="uk-width-1-2@m">
+                    <div class="uk-card uk-card-hover uk-card-body">
+                        <h4>💾 GitHub</h4>
+                        <p>Código fuente y contribuciones de la comunidad.</p>
+                        <a href="https://github.com/uikit/uikit" class="uk-button uk-button-text" target="_blank">Ver GitHub</a>
+                    </div>
+                </div>
+                <div class="uk-width-1-2@m">
+                    <div class="uk-card uk-card-hover uk-card-body">
+                        <h4>📝 Ejemplos</h4>
+                        <p>Ejemplos prácticos en la carpeta ejemplos/</p>
+                        <button class="uk-button uk-button-text" onclick="alert('Explora la carpeta ejemplos/ en el proyecto')">Ver Ejemplos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Instalación -->
+        <div class="section-container">
+            <h2>⚙️ Instalación</h2>
+            <p>Hay varias formas de instalar UIKit en tu proyecto:</p>
+            
+            <h3>1. Via CDN (Más fácil)</h3>
+            <div class="code-block">
+                <code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3/dist/css/uikit.min.css"&gt;<br>
+&lt;script src="https://cdn.jsdelivr.net/npm/uikit@3/dist/js/uikit.min.js"&gt;&lt;/script&gt;<br>
+&lt;script src="https://cdn.jsdelivr.net/npm/uikit@3/dist/js/uikit-icons.min.js"&gt;&lt;/script&gt;</code>
+            </div>
+
+            <h3 class="uk-margin-medium-top">2. Via NPM</h3>
+            <div class="code-block">
+                <code>npm install uikit</code>
+            </div>
+
+            <h3 class="uk-margin-medium-top">3. Via Package Manager</h3>
+            <div class="code-block">
+                <code>yarn add uikit<br>
+pnpm add uikit</code>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Proyecto Educativo - UIKit Framework | Hecho con ❤️ para aprender CSS</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 4: Landing Page con UIKit</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3/dist/js/uikit-icons.min.js"></script>
+    <style>
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cta-button {
+            padding: 15px 40px;
+            font-size: 1.1em;
+            font-weight: 600;
+            border-radius: 8px;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .cta-button:hover {
+            background: white;
+            color: #667eea;
+        }
+        .cta-button-primary {
+            background: white;
+            color: #667eea;
+        }
+        .cta-button-primary:hover {
+            background: rgba(255,255,255,0.9);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 20px;
+            background: #f8f9fa;
+        }
+        .feature-box {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .feature-box h3 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 80px 20px;
+            background: white;
+        }
+        .pricing-card {
+            background: white;
+            border-radius: 12px;
+            border: 2px solid #e0e0e0;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+            position: relative;
+        }
+        .pricing-card.featured {
+            border-color: #667eea;
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.2);
+        }
+        .pricing-card.featured::before {
+            content: 'POPULAR';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .pricing-card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .price {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #667eea;
+            margin: 20px 0;
+        }
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .pricing-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: #666;
+        }
+        .pricing-features li:before {
+            content: '✓ ';
+            color: #51cf66;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .pricing-button {
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .pricing-button.primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .pricing-button.secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        .testimonial-author {
+            font-weight: 600;
+            margin-top: 15px;
+        }
+        .stars {
+            color: #ffd43b;
+            margin-bottom: 15px;
+        }
+
+        /* CTA Section -->
+        .cta-section {
+            padding: 60px 20px;
+            background: white;
+            text-align: center;
+            border-top: 1px solid #f0f0f0;
+        }
+        .cta-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="uk-navbar-container" uk-navbar style="background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <div class="uk-navbar-left">
+            <div class="uk-navbar-item">
+                <h3 style="margin: 0; color: #667eea;">🚀 TechStart</h3>
+            </div>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><a href="#features">Características</a></li>
+                <li><a href="#pricing">Precios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content uk-container">
+            <h1>Transforma Tu Negocio Digital</h1>
+            <p>Soluciones innovadoras para el desarrollo web moderno</p>
+            <div class="cta-buttons">
+                <button class="cta-button cta-button-primary">Comenzar Ahora</button>
+                <button class="cta-button">Ver Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="uk-container">
+            <h2 class="uk-text-center uk-heading-large uk-margin-large-bottom">¿Por Qué Elegirnos?</h2>
+            
+            <div class="uk-grid uk-grid-large" uk-grid>
+                <div class="uk-width-1-3@l uk-width-1-2@m">
+                    <div class="feature-box">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Rápido</h3>
+                        <p>Implementación rápida y eficiente para tu proyecto</p>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@l uk-width-1-2@m">
+                    <div class="feature-box">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Diseño Moderno</h3>
+                        <p>Interfaces hermosas y responsive con tecnología actual</p>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@l uk-width-1-2@m">
+                    <div class="feature-box">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Seguro</h3>
+                        <p>Máxima seguridad y protección de datos garantizadas</p>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@l uk-width-1-2@m">
+                    <div class="feature-box">
+                        <div class="feature-icon">📱</div>
+                        <h3>Responsive</h3>
+                        <p>Funciona perfecto en todos los dispositivos</p>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@l uk-width-1-2@m">
+                    <div class="feature-box">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Escalable</h3>
+                        <p>Crece con tu negocio sin limitaciones</p>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@l uk-width-1-2@m">
+                    <div class="feature-box">
+                        <div class="feature-icon">💬</div>
+                        <h3>Soporte 24/7</h3>
+                        <p>Equipo dedicado listo para ayudarte siempre</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="uk-container">
+            <h2 class="uk-text-center uk-heading-large uk-margin-large-bottom">Planes de Precios</h2>
+            
+            <div class="uk-grid uk-grid-medium" uk-grid>
+                <div class="uk-width-1-3@l">
+                    <div class="pricing-card">
+                        <h3>Starter</h3>
+                        <div class="price">$29</div>
+                        <p style="color: #999;">por mes</p>
+                        <ul class="pricing-features">
+                            <li>5 Proyectos</li>
+                            <li>10 GB Almacenamiento</li>
+                            <li>Soporte Email</li>
+                            <li>Actualizaciones básicas</li>
+                        </ul>
+                        <button class="pricing-button secondary">Empezar</button>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-3@l">
+                    <div class="pricing-card featured">
+                        <h3>Professional</h3>
+                        <div class="price">$79</div>
+                        <p style="color: #999;">por mes</p>
+                        <ul class="pricing-features">
+                            <li>Proyectos Ilimitados</li>
+                            <li>100 GB Almacenamiento</li>
+                            <li>Soporte Prioritario</li>
+                            <li>Actualizaciones Premium</li>
+                            <li>Analytics Avanzado</li>
+                        </ul>
+                        <button class="pricing-button primary">Comenzar Ahora</button>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-3@l">
+                    <div class="pricing-card">
+                        <h3>Enterprise</h3>
+                        <div class="price">$249</div>
+                        <p style="color: #999;">por mes</p>
+                        <ul class="pricing-features">
+                            <li>Todo lo de Professional</li>
+                            <li>Almacenamiento Ilimitado</li>
+                            <li>Soporte Dedicado</li>
+                            <li>API Personalizada</li>
+                            <li>Capacitación incluida</li>
+                        </ul>
+                        <button class="pricing-button secondary">Contactar Ventas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonios">
+        <div class="uk-container">
+            <h2 class="uk-text-center uk-heading-large uk-margin-large-bottom">Lo que Dicen Nuestros Clientes</h2>
+            
+            <div class="uk-grid uk-grid-medium" uk-grid>
+                <div class="uk-width-1-3@l">
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Excelente servicio y muy profesional. Mi página web funciona perfectamente."</p>
+                        <div class="testimonial-author">- Juan García, CEO TechCorp</div>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@l">
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Superó nuestras expectativas. El soporte fue increíble en todo momento."</p>
+                        <div class="testimonial-author">- María López, Directora Digital</div>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@l">
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"La mejor inversión que hicimos. Los resultados hablan por sí solos."</p>
+                        <div class="testimonial-author">- Carlos Rodríguez, Emprendedor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contacto">
+        <div class="uk-container uk-container-small">
+            <h2>¿Listo para Comenzar?</h2>
+            <p class="uk-text-lead" style="color: #666;">Únete a miles de empresas que confían en nosotros</p>
+            <div class="cta-buttons">
+                <button class="cta-button cta-button-primary">Solicitar Demo Gratuita</button>
+                <button class="cta-button" style="background: #667eea; border-color: #667eea; color: white;">Contactar Ventas</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #2c2c2c; color: white; padding: 40px 20px;">
+        <div class="uk-container">
+            <div class="uk-grid uk-grid-medium" uk-grid>
+                <div class="uk-width-1-3@l">
+                    <h4>Sobre Nosotros</h4>
+                    <p>Somos líderes en soluciones digitales innovadoras.</p>
+                </div>
+                <div class="uk-width-1-3@l">
+                    <h4>Enlaces Útiles</h4>
+                    <ul class="uk-list">
+                        <li><a href="#" style="color: #aaa;">Términos de Servicio</a></li>
+                        <li><a href="#" style="color: #aaa;">Política de Privacidad</a></li>
+                        <li><a href="#" style="color: #aaa;">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="uk-width-1-3@l">
+                    <h4>Síguenos</h4>
+                    <p>
+                        <a href="#" style="color: #aaa; margin-right: 15px;">Facebook</a>
+                        <a href="#" style="color: #aaa; margin-right: 15px;">Twitter</a>
+                        <a href="#" style="color: #aaa;">LinkedIn</a>
+                    </p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #444; margin-top: 30px; padding-top: 20px; text-align: center; color: #999;">
+                <p>&copy; 2024 TechStart. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

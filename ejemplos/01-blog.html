@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1: Blog con UIKit</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3/dist/js/uikit-icons.min.js"></script>
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+        }
+        .article-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .tag {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #667eea;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="uk-container">
+            <h1>Mi Blog con UIKit</h1>
+            <p>Descubre artículos interesantes sobre desarrollo web</p>
+        </div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="uk-container">
+        <!-- Grid principal: Artículos + Sidebar -->
+        <div class="uk-grid uk-grid-medium" uk-grid>
+            <!-- Artículos (70%) -->
+            <div class="uk-width-2-3@m">
+                <!-- Artículo 1 -->
+                <div class="uk-card uk-card-default article-card uk-margin-large-bottom">
+                    <div class="uk-card-media-top">
+                        <img src="https://via.placeholder.com/600x300?text=HTML+CSS" alt="HTML CSS">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Fundamentos de HTML y CSS</h3>
+                        <p class="uk-text-secondary">Publicado el 15 de abril, 2024</p>
+                        
+                        <div>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Principiante</span>
+                        </div>
+                        
+                        <p class="uk-margin-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="uk-card-footer">
+                        <button class="uk-button uk-button-text">Leer más →</button>
+                    </div>
+                </div>
+
+                <!-- Artículo 2 -->
+                <div class="uk-card uk-card-default article-card uk-margin-large-bottom">
+                    <div class="uk-card-media-top">
+                        <img src="https://via.placeholder.com/600x300?text=JavaScript" alt="JavaScript">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Guía Completa de JavaScript Moderno</h3>
+                        <p class="uk-text-secondary">Publicado el 12 de abril, 2024</p>
+                        
+                        <div>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Intermedio</span>
+                            <span class="tag">ES6+</span>
+                        </div>
+                        
+                        <p class="uk-margin-top">Aprende las características modernas de JavaScript incluyendo 
+                        arrow functions, destructuring, async/await y mucho más.</p>
+                    </div>
+                    <div class="uk-card-footer">
+                        <button class="uk-button uk-button-text">Leer más →</button>
+                    </div>
+                </div>
+
+                <!-- Artículo 3 -->
+                <div class="uk-card uk-card-default article-card">
+                    <div class="uk-card-media-top">
+                        <img src="https://via.placeholder.com/600x300?text=UIKit" alt="UIKit">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Creando Interfaces Responsivas con UIKit</h3>
+                        <p class="uk-text-secondary">Publicado el 10 de abril, 2024</p>
+                        
+                        <div>
+                            <span class="tag">UIKit</span>
+                            <span class="tag">CSS Framework</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        
+                        <p class="uk-margin-top">Descubre cómo usar UIKit para crear hermosas interfaces 
+                        web responsivas en poco tiempo.</p>
+                    </div>
+                    <div class="uk-card-footer">
+                        <button class="uk-button uk-button-text">Leer más →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar (30%) -->
+            <div class="uk-width-1-3@m">
+                <!-- Buscar -->
+                <div class="uk-card uk-card-default uk-margin-bottom">
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Buscar</h3>
+                        <form>
+                            <input class="uk-input" type="search" placeholder="Buscar artículos...">
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Categorías -->
+                <div class="uk-card uk-card-default uk-margin-bottom">
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Categorías</h3>
+                        <ul class="uk-list uk-list-divider">
+                            <li><a href="#">HTML <span class="uk-badge">5</span></a></li>
+                            <li><a href="#">CSS <span class="uk-badge">8</span></a></li>
+                            <li><a href="#">JavaScript <span class="uk-badge">12</span></a></li>
+                            <li><a href="#">Frameworks <span class="uk-badge">7</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Artículos Recientes -->
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Recientes</h3>
+                        <ul class="uk-list uk-list-divider">
+                            <li>
+                                <a href="#">Fundamentos de HTML y CSS</a>
+                                <p class="uk-text-small uk-text-muted">15 abril</p>
+                            </li>
+                            <li>
+                                <a href="#">Guía Completa de JavaScript Moderno</a>
+                                <p class="uk-text-small uk-text-muted">12 abril</p>
+                            </li>
+                            <li>
+                                <a href="#">Creando Interfaces Responsivas con UIKit</a>
+                                <p class="uk-text-small uk-text-muted">10 abril</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paginación -->
+        <div class="uk-margin-large-top">
+            <ul class="uk-pagination">
+                <li class="uk-disabled"><a>Anterior</a></li>
+                <li class="uk-active"><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">Siguiente</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="uk-margin-large-top uk-padding uk-background-secondary uk-text-white">
+        <div class="uk-container uk-text-center">
+            <p>&copy; 2024 Mi Blog. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
