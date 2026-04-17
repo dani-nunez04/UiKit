@@ -6,8 +6,7 @@ Las utilidades son clases de CSS que facilitan estilos comunes sin necesidad de 
 
 ### Margin
 
-```html
-<!-- Margin en todos los lados -->
+Agrega espacio externo alrededor de elementos.
 <div class="uk-margin">Margin estándar</div>
 <div class="uk-margin-small">Margin pequeño</div>
 <div class="uk-margin-medium">Margin mediano</div>
@@ -26,8 +25,7 @@ Las utilidades son clases de CSS que facilitan estilos comunes sin necesidad de 
 
 ### Padding
 
-```html
-<!-- Padding en todos los lados -->
+Agrega espacio interno dentro de elementos.
 <div class="uk-padding">Padding estándar</div>
 <div class="uk-padding-small">Padding pequeño</div>
 <div class="uk-padding-medium">Padding mediano</div>
@@ -42,8 +40,7 @@ Las utilidades son clases de CSS que facilitan estilos comunes sin necesidad de 
 
 ### Alineación
 
-```html
-<p class="uk-text-left">Texto alineado a la izquierda</p>
+Controla cómo se distribuye el texto horizontalmente.
 <p class="uk-text-center">Texto centrado</p>
 <p class="uk-text-right">Texto alineado a la derecha</p>
 <p class="uk-text-justify">Texto justificado</p>
@@ -52,9 +49,7 @@ Las utilidades son clases de CSS que facilitan estilos comunes sin necesidad de 
 ### Tamaño
 
 ```html
-<!-- Tamaños -->
-<p class="uk-text-small">Texto pequeño</p>
-<p>Texto normal</p>
+Ajusta el tamaño del texto.
 <p class="uk-text-large">Texto grande</p>
 
 <!-- Responsive -->
@@ -65,8 +60,7 @@ Las utilidades son clases de CSS que facilitan estilos comunes sin necesidad de 
 
 ```html
 <p class="uk-text-bold">Texto en negrita</p>
-<p class="uk-text-italic">Texto en cursiva</p>
-<p class="uk-text-underline">Texto subrayado</p>
+Aplica formatos al texto como negrita, cursiva, etc.</p>
 <p class="uk-text-line-through">Texto tachado</p>
 
 <!-- Capitalización -->
@@ -80,8 +74,7 @@ Las utilidades son clases de CSS que facilitan estilos comunes sin necesidad de 
 ### Colores de Texto
 
 ```html
-<p class="uk-text-primary">Texto Primary</p>
-<p class="uk-text-secondary">Texto Secondary</p>
+Cambia el color del texto usando clases predefinidas.</p>
 <p class="uk-text-success">Texto Success</p>
 <p class="uk-text-warning">Texto Warning</p>
 <p class="uk-text-danger">Texto Danger</p>
@@ -91,8 +84,7 @@ Las utilidades son clases de CSS que facilitan estilos comunes sin necesidad de 
 ### Colores de Fondo
 
 ```html
-<div class="uk-padding uk-background-primary">Fondo Primary</div>
-<div class="uk-padding uk-background-secondary">Fondo Secondary</div>
+Aplica colores de fondo a elementos.div>
 
 <!-- Alternativa usando divs coloreados -->
 <div style="background: #1e87f0; padding: 20px; color: white;">
@@ -103,11 +95,7 @@ Las utilidades son clases de CSS que facilitan estilos comunes sin necesidad de 
 ## Flexbox
 
 ### Display y Alineación
-
-```html
-<!-- Flex display -->
-<div class="uk-flex">
-    <div>Item 1</div>
+Crea layouts flexibles usando Flexbox.
     <div>Item 2</div>
     <div>Item 3</div>
 </div>

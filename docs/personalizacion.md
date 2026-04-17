@@ -2,7 +2,7 @@
 
 UIKit es muy flexible y se puede personalizar de varias maneras para adaptarse a tu proyecto.
 
-## 1. Variables CSS
+## Variables CSS
 
 La forma más simple de personalizar UIKit es usando variables CSS.
 
@@ -55,9 +55,9 @@ La forma más simple de personalizar UIKit es usando variables CSS.
 </html>
 ```
 
-## 2. Sobrescribir Estilos
+## Sobrescribir Estilos
 
-Puedes escribir CSS personalizado que sobrescriba los estilos de UIKit:
+Escribe CSS personalizado que sobrescriba los estilos de UIKit.
 
 ```css
 /* Personalizar botones */
@@ -85,9 +85,9 @@ Puedes escribir CSS personalizado que sobrescriba los estilos de UIKit:
 }
 ```
 
-## 3. Clases Personalizadas
+## Clases Personalizadas
 
-Crea tus propias clases para componentes recurrentes:
+Crea tus propias clases para componentes recurrentes.
 
 ```css
 /* Componente: Hero Section */
@@ -149,11 +149,9 @@ Uso:
 </div>
 ```
 
-## 4. Temas Completos
+## Temas Completos
 
-### Tema Oscuro
-
-```css
+Crea temas visuales completos cambiando variables y estilos.
 @media (prefers-color-scheme: dark) {
     :root {
         --uk-background-default: #1a1a1a;
@@ -199,9 +197,9 @@ Uso:
 
 ## 5. Utilidades Personalizadas
 
-Crea nuevas utilidades para casos de uso específicos:
+CreUtilidades Personalizadas
 
-```css
+Crea nuevas utilidades para casos de uso específicos.
 /* Espaciado extra */
 .uk-margin-xl {
     margin: 40px;
@@ -236,7 +234,7 @@ Crea nuevas utilidades para casos de uso específicos:
 }
 ```
 
-## 6. Responsive Personalizado
+## Responsive Personalizado
 
 ```css
 /* Mobile first */
@@ -257,9 +255,9 @@ Crea nuevas utilidades para casos de uso específicos:
 }
 ```
 
-## 7. Configuración NPM
+## Configuración NPM
 
-Si usas UIKit mediante NPM, puedes personalizar importando solo componentes necesarios:
+Si usas UIKit mediante NPM, puedes personalizar importando solo componentes necesarios.
 
 ```javascript
 // main.js

@@ -2,7 +2,7 @@
 
 Una guía de consulta rápida para los componentes y utilidades más usados.
 
-## 📦 CDN - Copia y Pega
+## CDN - Copia y Pega
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3/dist/css/uikit.min.css">
@@ -10,7 +10,7 @@ Una guía de consulta rápida para los componentes y utilidades más usados.
 <script src="https://cdn.jsdelivr.net/npm/uikit@3/dist/js/uikit-icons.min.js"></script>
 ```
 
-## 🎨 Componentes Más Usados
+## Componentes Más Usados
 
 ### Botón
 ```html
@@ -52,6 +52,38 @@ Una guía de consulta rápida para los componentes y utilidades más usados.
 <div class="uk-alert-danger" uk-alert>Danger</div>
 ```
 
+### Formulario Completo
+
+Estructura básica de un formulario con validación:
+
+```html
+<form>
+    <div class="uk-margin">
+        <label class="uk-form-label">Nombre</label>
+        <input class="uk-input" type="text" required>
+    </div>
+    
+    <div class="uk-margin">
+        <label class="uk-form-label">Email</label>
+        <input class="uk-input" type="email" required>
+    </div>
+    
+    <div class="uk-margin">
+        <label class="uk-form-label">Mensaje</label>
+        <textarea class="uk-textarea" rows="4" required></textarea>
+    </div>
+    
+    <div class="uk-margin">
+        <label>
+            <input class="uk-checkbox" type="checkbox" required>
+            Acepto términos
+        </label>
+    </div>
+    
+    <button class="uk-button uk-button-primary">Enviar</button>
+</form>
+```
+
 ### Formulario
 ```html
 <form>
@@ -64,7 +96,7 @@ Una guía de consulta rápida para los componentes y utilidades más usados.
 </form>
 ```
 
-## 📐 Utilidades Esenciales
+## Utilidades Esenciales
 
 ### Espaciado
 ```html
@@ -96,7 +128,7 @@ Una guía de consulta rápida para los componentes y utilidades más usados.
 <div class="uk-width-auto">Auto</div>
 ```
 
-## 📱 Breakpoints Responsive
+## Breakpoints Responsive
 
 Añade a tus clases para hacer responsive:
 
@@ -116,7 +148,7 @@ Breakpoints:
 - `@l` - Large (≥1200px)
 - `@xl` - Extra Large (≥1600px)
 
-## 🎯 Patrones Comunes
+## Patrones Comunes
 
 ### Navbar Básica
 ```html
@@ -167,7 +199,7 @@ Breakpoints:
 </div>
 ```
 
-## 🔍 Atributos Especiales
+## Atributos Especiales
 
 ```html
 <!-- Toggle para modales, dropdowns -->
@@ -186,7 +218,7 @@ uk-navbar
 uk-modal
 ```
 
-## 🎨 Variables CSS Personalizables
+## Variables CSS Personalizables
 
 ```css
 :root {
@@ -199,15 +231,15 @@ uk-modal
 }
 ```
 
-## 📚 Recursos Útiles
+## Recursos Útiles
 
-- **Sitio Oficial**: https://getuikit.com
-- **Documentación**: https://getuikit.com/docs
-- **Componentes**: https://getuikit.com/docs/components
-- **Utilidades**: https://getuikit.com/docs/utility
-- **GitHub**: https://github.com/uikit/uikit
+- Sitio Oficial: https://getuikit.com
+- Documentación: https://getuikit.com/docs
+- Componentes: https://getuikit.com/docs/components
+- Utilidades: https://getuikit.com/docs/utility
+- GitHub: https://github.com/uikit/uikit
 
-## ⚡ Tips Rápidos
+## Tips Rápidos
 
 1. Siempre usa `uk-container` para centrar contenido
 2. El atributo `uk-grid` es obligatorio en grids
@@ -217,7 +249,7 @@ uk-modal
 6. Las alertas cerrable necesitan `uk-alert`
 7. Los dropdowns necesitan `uk-dropdown`
 
-## 🚀 Inicio Rápido Template
+## Template Inicial
 
 ```html
 <!DOCTYPE html>

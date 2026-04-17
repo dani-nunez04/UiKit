@@ -1,21 +1,21 @@
-# 📑 Índice Completo del Proyecto UIKit
+# Índice Completo del Proyecto UIKit
 
 Guía de navegación rápida para encontrar lo que necesitas.
 
 ---
 
-## 🏠 Punto de Entrada
+## Punto de Entrada
 
-- **[index.html](../index.html)** - Página principal interactiva con demostración de componentes
+- [index.html](../index.html) - Página principal interactiva con demostración de componentes
   - Introducción visual
   - Ejemplos en vivo
   - Enlaces rápidos
 
 ---
 
-## 📖 Documentación (en `docs/`)
+## Documentación (en `docs/`)
 
-### 1. **[Instalación](instalacion.md)** ⭐ COMIENZA AQUÍ
+### 1. Instalación - COMIENZA AQUÍ
 - Instalación vía CDN
 - Instalación con NPM
 - Primeros pasos
@@ -79,7 +79,7 @@ Guía de navegación rápida para encontrar lo que necesitas.
 
 ---
 
-## 💡 Ejemplos Prácticos (en `ejemplos/`)
+## Ejemplos Prácticos (en `ejemplos/`)
 
 ### 1. **[01-blog.html](../ejemplos/01-blog.html)** - Blog Completo
 **Conceptos**: Grid, Cards, Utilidades, Sidebar
@@ -153,9 +153,9 @@ Guía de navegación rápida para encontrar lo que necesitas.
 
 ---
 
-## 🎯 Rutas de Aprendizaje Recomendadas
+## Rutas de Aprendizaje Recomendadas
 
-### 👶 Principiante Absoluto
+### Principiante Absoluto
 1. Lee: [Instalación](instalacion.md)
 2. Lee: [Introducción](introduccion.md)
 3. Explora: [index.html](../index.html)
@@ -165,7 +165,7 @@ Guía de navegación rápida para encontrar lo que necesitas.
 7. Lee: [Componentes](componentes.md)
 8. Ver: [03-formulario.html](../ejemplos/03-formulario.html)
 
-### 📚 Desarrollador Intermedio
+### Desarrollador Intermedio
 1. Revisa: [Instalación](instalacion.md)
 2. Domina: [Grid](grid.md)
 3. Explora: [Componentes](componentes.md)
@@ -173,7 +173,7 @@ Guía de navegación rápida para encontrar lo que necesitas.
 5. Lee: [Personalización](personalizacion.md)
 6. Crea: Tu propio dashboard
 
-### 🚀 Desarrollador Avanzado
+### Desarrollador Avanzado
 1. Lee: Toda la documentación
 2. Analiza: Todos los ejemplos
 3. Modifica: Personaliza completamente
@@ -182,37 +182,37 @@ Guía de navegación rápida para encontrar lo que necesitas.
 
 ---
 
-## 🔍 Buscar por Tema
+## Buscar por Tema
 
 ### Necesito...
 
 #### Layouts y Grid
-- 📐 [Grid - Sistema completo](grid.md)
-- 💡 [Ejemplo: Blog](../ejemplos/01-blog.html)
-- 💡 [Ejemplo: Dashboard](../ejemplos/02-dashboard.html)
+- [Grid - Sistema completo](grid.md)
+- [Ejemplo: Blog](../ejemplos/01-blog.html)
+- [Ejemplo: Dashboard](../ejemplos/02-dashboard.html)
 
 #### Componentes Específicos
-- 🎨 [Todos los componentes](componentes.md)
-- 💡 [Ejemplo: Formulario](../ejemplos/03-formulario.html)
-- 💡 [Ejemplo: Landing](../ejemplos/04-landing-page.html)
+- [Todos los componentes](componentes.md)
+- [Ejemplo: Formulario](../ejemplos/03-formulario.html)
+- [Ejemplo: Landing](../ejemplos/04-landing-page.html)
 
 #### Estilos y Utilidades
-- 🛠️ [Todas las utilidades](utilidades.md)
-- ⚡ [Referencia rápida](referencia-rapida.md)
+- [Todas las utilidades](utilidades.md)
+- [Referencia rápida](referencia-rapida.md)
 
 #### Personalización
-- 🎨 [Personalizar UIKit](personalizacion.md)
-- 🎨 [Variables CSS](personalizacion.md#variables-css)
-- 🎨 [Temas personalizados](personalizacion.md#temas-completos)
+- [Personalizar UIKit](personalizacion.md)
+- [Variables CSS](personalizacion.md#variables-css)
+- [Temas personalizados](personalizacion.md#temas-completos)
 
 #### Instalación y Configuración
-- ⚙️ [Guía de instalación](instalacion.md)
-- 📦 [CDN vs NPM](instalacion.md)
-- 🚀 [Primeros pasos](instalacion.md#primeros-pasos)
+- [Guía de instalación](instalacion.md)
+- [CDN vs NPM](instalacion.md)
+- [Primeros pasos](instalacion.md#primeros-pasos)
 
 ---
 
-## 📊 Estructura del Contenido
+## Estructura del Contenido
 
 ```
 Documentación (7 temas)
@@ -233,7 +233,7 @@ Ejemplos (4 proyectos completos)
 
 ---
 
-## ✨ Quick Links
+## Quick Links
 
 | Recurso | Enlace | Para |
 |---------|--------|------|
@@ -248,23 +248,23 @@ Ejemplos (4 proyectos completos)
 
 ---
 
-## 🎓 Niveles de Profundidad
+## Niveles de Profundidad
 
-### 🟢 Básico (1-2 horas)
+### Básico (1-2 horas)
 - Instalación
 - Introducción
 - Grid básico
 - Componentes principales
 - Ver ejemplos
 
-### 🟡 Intermedio (3-5 horas)
+### Intermedio (3-5 horas)
 - Grid avanzado
 - Todos los componentes
 - Utilidades
 - Personalización básica
 - Modificar ejemplos
 
-### 🔴 Avanzado (6+ horas)
+### Avanzado (6+ horas)
 - Toda la documentación
 - Temas personalizados
 - NPM y bundlers
@@ -273,28 +273,28 @@ Ejemplos (4 proyectos completos)
 
 ---
 
-## 🚀 Próximo Paso
+## Próximo Paso
 
-**¿Por dónde empiezo?**
+Por dónde empiezo?
 
-1. 👉 Ve a [index.html](../index.html)
-2. 👉 Lee [Instalación](instalacion.md)
-3. 👉 Lee [Introducción](introduccion.md)
-4. 👉 Abre [01-blog.html](../ejemplos/01-blog.html) en tu navegador
-5. 👉 ¡Comienza a experimentar!
-
----
-
-## 💬 ¿Necesitas Ayuda?
-
-- 📖 Revisa la [Referencia Rápida](referencia-rapida.md)
-- 🔍 Busca en la documentación el tema que necesitas
-- 💡 Mira un ejemplo similar
-- 🌐 Consulta la [documentación oficial UIKit](https://getuikit.com/docs)
+1. Ve a [index.html](../index.html)
+2. Lee [Instalación](instalacion.md)
+3. Lee [Introducción](introduccion.md)
+4. Abre [01-blog.html](../ejemplos/01-blog.html) en tu navegador
+5. ¡Comienza a experimentar!
 
 ---
 
-**¡Feliz aprendizaje! 🎉**
+## Necesitas Ayuda?
+
+- Revisa la [Referencia Rápida](referencia-rapida.md)
+- Busca en la documentación el tema que necesitas
+- Mira un ejemplo similar
+- Consulta la [documentación oficial UIKit](https://getuikit.com/docs)
+
+---
+
+Feliz aprendizaje
 
 ---
 

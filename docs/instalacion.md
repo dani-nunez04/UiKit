@@ -2,7 +2,7 @@
 
 Una guía completa para instalar y usar UIKit en tus proyectos.
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
 1. [Instalación Rápida (CDN)](#instalación-rápida-cdn)
 2. [Instalación con NPM](#instalación-con-npm)
@@ -14,7 +14,7 @@ Una guía completa para instalar y usar UIKit en tus proyectos.
 
 ## Instalación Rápida (CDN)
 
-La forma más fácil de comenzar. ⭐ **RECOMENDADO PARA EMPEZAR**
+La forma más fácil de comenzar. RECOMENDADO PARA EMPEZAR
 
 ### 1. Copia el Template Base
 
@@ -300,7 +300,7 @@ mi-proyecto/
 
 ## Troubleshooting
 
-### ❌ Los estilos no aparecen
+PROBLEMA: Los estilos no aparecen
 
 **Problema**: UIKit no se carga.
 
@@ -313,7 +313,7 @@ mi-proyecto/
 4. Tus CSS
 ```
 
-### ❌ Los componentes no funcionan
+PROBLEMA: Los componentes no funcionan
 
 **Problema**: Modales, dropdowns no abren.
 
@@ -324,7 +324,7 @@ mi-proyecto/
 <script src="https://cdn.jsdelivr.net/npm/uikit@3/dist/js/uikit-icons.min.js"></script>
 ```
 
-### ❌ Los iconos no aparecen
+PROBLEMA: Los iconos no aparecen
 
 **Problema**: Ver cuadrados en lugar de iconos.
 
@@ -334,7 +334,7 @@ mi-proyecto/
 <script src="https://cdn.jsdelivr.net/npm/uikit@3/dist/js/uikit-icons.min.js"></script>
 ```
 
-### ❌ El grid no es responsivo
+PROBLEMA: El grid no es responsivo
 
 **Problema**: Las columnas no se adaptan.
 
@@ -349,7 +349,7 @@ mi-proyecto/
 uk-width-1-2@m  ← Media query
 ```
 
-### ❌ Estilos personalizados no funcionan
+PROBLEMA: Estilos personalizados no funcionan
 
 **Problema**: CSS personalizado se sobrescribe.
 

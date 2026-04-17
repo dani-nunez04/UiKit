@@ -4,6 +4,8 @@ UIKit proporciona una variedad de componentes preconstructidos para acelerar el 
 
 ## Botones
 
+Los botones son elementos interactivos que permiten a los usuarios realizar acciones. UIKit ofrece varios estilos predefinidos.
+
 ### Tipos de Botón
 
 ```html
@@ -107,7 +109,11 @@ UIKit proporciona una variedad de componentes preconstructidos para acelerar el 
 
 ## Formularios
 
+Los formularios permiten a los usuarios enviar datos. UIKit proporciona estilos consistentes para todos los elementos de entrada.
+
 ### Input Básico
+
+El input es el campo de texto más simple. Perfecta para nombres, emails, búsqueda, etc.
 
 ```html
 <div class="uk-margin">
@@ -116,86 +122,116 @@ UIKit proporciona una variedad de componentes preconstructidos para acelerar el 
 </div>
 ```
 
+**Atributos útiles**:
+- `type="email"` - Valida formato de email
+- `type="text"` - Texto general
+- `type="password"` - Contraseña oculta
+- `type="number"` - Solo números
+- `type="date"` - Selector de fecha
+- `placeholder` - Texto de ayuda dentro del campo
+
 ### Textarea
+
+Campo de texto multilínea para mensajes largos o comentarios.
 
 ```html
 <div class="uk-margin">
     <label class="uk-form-label">Mensaje</label>
-    <textarea class="uk-textarea" rows="5"></textarea>
+    <textarea class="uk-textarea" rows="5" placeholder="Escribe tu mensaje..."></textarea>
 </div>
 ```
 
+**Parámetros**:
+- `rows="5"` - Altura en líneas de texto
+
 ### Select
+
+Dropdown para seleccionar una opción de una lista.
 
 ```html
 <div class="uk-margin">
-    <label class="uk-form-label">Opción</label>
+    <label class="uk-form-label">País</label>
     <select class="uk-select">
-        <option>Opción 1</option>
-        <option>Opción 2</option>
-        <option>Opción 3</option>
+        <option>-- Selecciona un país --</option>
+        <option>España</option>
+        <option>México</option>
+        <option>Argentina</option>
     </select>
 </div>
 ```
 
 ### Checkbox y Radio
 
+Checkboxes permiten múltiples selecciones. Radios solo una selección por grupo.
+
 ```html
-<!-- Checkbox -->
 <div class="uk-margin">
     <label>
         <input class="uk-checkbox" type="checkbox">
-        Aceptar términos
+        Aceptar términos y condiciones
     </label>
 </div>
 
-<!-- Radio -->
 <div class="uk-margin">
     <label>
-        <input class="uk-radio" type="radio" name="grupo">
+        <input class="uk-radio" type="radio" name="opciones">
         Opción A
     </label>
     <label>
-        <input class="uk-radio" type="radio" name="grupo">
+        <input class="uk-radio" type="radio" name="opciones">
         Opción B
     </label>
 </div>
 ```
 
+**Nota**: Los radios del mismo grupo deben tener el mismo atributo `name`
+
 ## Alertas
 
+Las alertas comunican mensajes importantes al usuario. Hay cuatro tipos según la importancia.
+
+### Tipos de Alerta
+
 ```html
-<!-- Alert Primary -->
+<!-- Alerta informativa -->
 <div class="uk-alert-primary" uk-alert>
     <a class="uk-alert-close" uk-close></a>
-    <p>Este es un mensaje informativo.</p>
+    <p>Información importante para el usuario.</p>
 </div>
 
-<!-- Alert Success -->
+<!-- Alerta de éxito -->
 <div class="uk-alert-success" uk-alert>
-    <p>¡La operación fue exitosa!</p>
+    <p>La operación fue completada exitosamente.</p>
 </div>
 
-<!-- Alert Warning -->
+<!-- Alerta de advertencia -->
 <div class="uk-alert-warning" uk-alert>
-    <p>Advertencia: revisa esto antes de continuar.</p>
+    <p>Advertencia: verifica esto antes de continuar.</p>
 </div>
 
-<!-- Alert Danger -->
+<!-- Alerta de error -->
 <div class="uk-alert-danger" uk-alert>
-    <p>Error: algo salió mal.</p>
+    <p>Error: algo salió mal durante la operación.</p>
 </div>
 ```
+
+**Clases disponibles**:
+- `uk-alert-primary` - Información general
+- `uk-alert-success` - Operación exitosa
+- `uk-alert-warning` - Precaución necesaria
+- `uk-alert-danger` - Error o problema
 
 ## Navegación
 
 ### Navbar Básica
 
+La navbar es la barra de navegación principal del sitio. Generalmente va en la parte superior.
+
 ```html
 <nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
         <div class="uk-navbar-item">
-            <h3>Logo</h3>
+            <h3>Logo del Sitio</h3>
         </div>
     </div>
     <div class="uk-navbar-right">

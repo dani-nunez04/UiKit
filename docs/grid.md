@@ -6,8 +6,7 @@ El grid de UIKit es un sistema flexible basado en Flexbox que permite crear layo
 
 ### Estructura
 
-```html
-<div class="uk-grid" uk-grid>
+El grid es un sistema de layout basado en filas y columnas. La clase `uk-grid` activa el comportamiento responsivo.
     <div>Item 1</div>
     <div>Item 2</div>
     <div>Item 3</div>
@@ -18,7 +17,7 @@ El atributo `uk-grid` es importante para que UIKit aplique el comportamiento res
 
 ## Anchos de Columnas
 
-UIKit proporciona clases para establecer el ancho de las columnas:
+UIKit proporciona clases para establecer el ancho de las columnas usando fracciones.
 
 ### Fracciones
 
@@ -60,7 +59,7 @@ UIKit proporciona clases para establecer el ancho de las columnas:
 
 ## Responsive Breakpoints
 
-UIKit permite cambiar el layout según el tamaño de pantalla usando sufijos de breakpoints:
+UIKit permite cambiar el layout según el tamaño de pantalla usando sufijos de breakpoints.
 
 - `@s` - Small (≥640px)
 - `@m` - Medium (≥960px)

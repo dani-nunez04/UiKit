@@ -4,15 +4,17 @@
 
 UIKit es un framework CSS y JavaScript moderno desarrollado por YooTheme que proporciona componentes, patrones y utilidades para construir interfaces web rápidamente. Es ligero, flexible y fácil de integrar en cualquier proyecto.
 
-### Características Principales
+## Características Principales
 
-- **Ligero**: Solo ~60KB comprimido
-- **Modular**: Importa solo lo que necesitas
-- **Responsivo**: Funciona perfectamente en móviles, tablets y escritorio
-- **Componentes Listos**: Grid, botones, formularios, modales, navegación, etc.
-- **Customizable**: Fácil de personalizar con variables LESS/CSS
-- **JavaScript Interactivo**: Componentes interactivos sin dependencias externas
-- **Soporte Navegadores**: IE 11+ y navegadores modernos
+UIKit ofrece múltiples ventajas para desarrollo web:
+
+- Ligero: Solo ~60KB comprimido
+- Modular: Importa solo lo que necesitas
+- Responsivo: Funciona perfectamente en móviles, tablets y escritorio
+- Componentes Listos: Grid, botones, formularios, modales, navegación, etc
+- Customizable: Fácil de personalizar con variables LESS/CSS
+- JavaScript Interactivo: Componentes interactivos sin dependencias externas
+- Soporte Navegadores: IE 11+ y navegadores modernos
 
 ## Comparación con Otros Frameworks
 
@@ -120,14 +122,14 @@ Clases de ayuda para espaciado, alineación, texto, etc.:
 
 ## Ventajas de Usar UIKit
 
-✅ Rápido de aprender y implementar
-✅ Código HTML semántico y legible
-✅ Componentes polished y profesionales
-✅ Excelente para prototipado rápido
-✅ Perfectamente responsive desde el inicio
-✅ Sin dependencias externas
-✅ Fácil de personalizar
-✅ Comunidad activa
+- Rápido de aprender e implementar
+- Código HTML semántico y legible
+- Componentes pulidos y profesionales
+- Excelente para prototipado rápido
+- Perfectamente responsive desde el inicio
+- Sin dependencias externas
+- Fácil de personalizar
+- Comunidad activa
 
 ## Próximos Pasos
 
